@@ -22,11 +22,11 @@ const NavBar = () => {
               extendedNavBar ? "right-4" : "top-[-280px] right-[-110px]"
             }`}
           >
-            <li className="hover:text-gray-400 cursor-pointer">Home</li>
+            <li className="hover:text-gray-400 cursor-pointer pb-2">Home</li>
             {isLoggedIn ? (
               <div className="md:flex-row lg:flex lg:gap-6">
-                <li className="hover:text-gray-400 cursor-pointer">Blogs</li>
-                <li className="hover:text-gray-400 cursor-pointer">MyBlogs</li>
+                <li className="hover:text-gray-400 cursor-pointer pb-2">Blogs</li>
+                <li className="hover:text-gray-400 cursor-pointer pb-2">MyBlogs</li>
                 <li
                   className="hover:text-gray-400 cursor-pointer"
                   onClick={logout}
@@ -37,7 +37,7 @@ const NavBar = () => {
             ) : (
               <div className="md:flex-row lg:flex lg:gap-6">
                 <li
-                  className="hover:text-gray-400 cursor-pointer"
+                  className="hover:text-gray-400 cursor-pointer pb-2"
                   onClick={login}
                 >
                   Login
